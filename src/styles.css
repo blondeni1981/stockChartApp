@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+/* 
+
+Font Families
+font-family: 'Poppins', sans-serif;
+font-family: 'Zen Kaku Gothic Antique', sans-serif; 
+
+*/
+
+html,
+body,
+app-root {
+  height: 100%;
+}
+
+body {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+body {
+  background-color: #28262c;
+  color: #f9f5ff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+}

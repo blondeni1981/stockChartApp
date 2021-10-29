@@ -1,0 +1,13 @@
+main {
+  width: 90vw;
+  margin: 0 auto;
+  min-height: calc(100vh-56px-64px);
+}
+
+app-authentication {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
