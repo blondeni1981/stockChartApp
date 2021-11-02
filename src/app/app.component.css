@@ -1,8 +1,11 @@
 main {
-  width: 90vw;
+  width:max-content;
   margin: 0 auto;
-  min-height: calc(100vh-56px-64px);
+  height:max-content;
+  
 }
+
+
 
 app-authentication {
   margin: 0;
