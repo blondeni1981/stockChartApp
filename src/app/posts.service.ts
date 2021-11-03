@@ -7,7 +7,7 @@ export class PostsService {
   private posts: Post[] = [];
   private postsUpdated = new Subject<Post[]>();
 
-  constructor(private http: HttpClient) { }
+  //constructor(private http: HttpClient) { }
 
   getPosts() {
     return [...this.posts];

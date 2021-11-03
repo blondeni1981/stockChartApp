@@ -16,14 +16,14 @@ export class PostListComponent {
   //   { title: "Third post", content: "Third post's content."}
 
   posts: Post[] = [];
-  private postsSub: Subscription;
-  constructor(public postsService: PostsService){}
+  //private postsSub: Subscription;
+  //constructor(public postsService: PostsService){}
   
-  ngOnInit() {
-    this.posts = this.postsService.getPosts();
-    this.postsSub = this.postsService.getPostUpdateListener()
-      .subscribe((posts: Post[]) => {
-        this.posts = posts;
-      });
-  }
+  // ngOnInit() {
+  //   this.posts = this.postsService.getPosts();
+  //   this.postsSub = this.postsService.getPostUpdateListener()
+  //     .subscribe((posts: Post[]) => {
+  //       this.posts = posts;
+  //     });
+  // }
 }

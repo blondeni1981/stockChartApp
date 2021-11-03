@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {StockChartModule} from '@syncfusion/ej2-angular-charts';
+import {DateTimeService, CandleSeriesService} from '@syncfusion/ej2-angular-charts';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { PostCreateComponent } from './post-create/post-create.component';
+import { StockchartComponent } from './stockchart/stockchart.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +19,14 @@ import { PostCreateComponent } from './post-create/post-create.component';
     AuthenticationComponent,
     PostListComponent,
     PostCreateComponent,
+    StockchartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StockChartModule
   ],
-  providers: [],
+  providers: [DateTimeService, CandleSeriesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
