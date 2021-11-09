@@ -12,6 +12,12 @@ import { PostListComponent } from './post-list/post-list.component';
 import { PostCreateComponent } from './post-create/post-create.component';
 import { StockchartComponent } from './stockchart/stockchart.component';
 
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
+import { SignInComponent}  from './login/login.component';  // had to edit this
+import { GoogleSigninComponent }  from './google.signin';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +25,11 @@ import { StockchartComponent } from './stockchart/stockchart.component';
     AuthenticationComponent,
     PostListComponent,
     PostCreateComponent,
-    StockchartComponent
+    StockchartComponent,
+    LoginComponent,
+    LogoutComponent,
+    GoogleSigninComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
