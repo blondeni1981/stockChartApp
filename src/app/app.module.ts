@@ -3,14 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import {StockChartModule} from '@syncfusion/ej2-angular-charts';
 import {DateTimeService, CandleSeriesService} from '@syncfusion/ej2-angular-charts';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
-import { PostListComponent } from './post-list/post-list.component';
-import { PostCreateComponent } from './post-create/post-create.component';
 import { StockchartComponent } from './stockchart/stockchart.component';
+
 
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
@@ -19,11 +17,14 @@ import { GoogleSigninComponent }  from './google.signin';
 import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AuthenticationComponent,
+
     PostListComponent,
     PostCreateComponent,
     StockchartComponent,
@@ -31,13 +32,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LogoutComponent,
     GoogleSigninComponent,
     SignInComponent
+
+    StockchartComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     StockChartModule,
+
     MatButtonModule,
     BrowserAnimationsModule
+
+    HttpClientModule
+
   ],
   providers: [DateTimeService, CandleSeriesService],
   bootstrap: [AppComponent]
