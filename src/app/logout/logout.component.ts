@@ -12,7 +12,7 @@ export class LogoutComponent implements OnInit {
   clearLoginData(): void {
     sessionStorage.setItem('ID:', "" );
     sessionStorage.setItem('Name:', "" );
-    window.location.href = '/page1';
+    window.location.href = '';
   }
 
   ngOnInit(): void {

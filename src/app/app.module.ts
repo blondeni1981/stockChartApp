@@ -16,7 +16,8 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { SignInComponent}  from './login/login.component';  // had to edit this
 import { GoogleSigninComponent }  from './google.signin';
-
+import {MatButtonModule} from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import { GoogleSigninComponent }  from './google.signin';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StockChartModule
+    StockChartModule,
+    MatButtonModule,
+    BrowserAnimationsModule
   ],
   providers: [DateTimeService, CandleSeriesService],
   bootstrap: [AppComponent]

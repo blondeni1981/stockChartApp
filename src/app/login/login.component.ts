@@ -40,6 +40,6 @@ export class LoginComponent {
    <google-signin></google-signin>`
 })
 export class SignInComponent {
-  title     = "signin page";
+  title     = "Signin Page";
   constructor() { console.clear(); }
 }
