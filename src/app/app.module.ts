@@ -9,6 +9,14 @@ import { HeaderComponent } from './header/header.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { StockchartComponent } from './stockchart/stockchart.component';
 
+
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
+import { SignInComponent}  from './login/login.component';  // had to edit this
+import { GoogleSigninComponent }  from './google.signin';
+import {MatButtonModule} from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -16,13 +24,28 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     HeaderComponent,
     AuthenticationComponent,
+
+    PostListComponent,
+    PostCreateComponent,
+    StockchartComponent,
+    LoginComponent,
+    LogoutComponent,
+    GoogleSigninComponent,
+    SignInComponent
+
     StockchartComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     StockChartModule,
+
+    MatButtonModule,
+    BrowserAnimationsModule
+
     HttpClientModule
+
   ],
   providers: [DateTimeService, CandleSeriesService],
   bootstrap: [AppComponent]
