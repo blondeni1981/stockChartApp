@@ -49,7 +49,7 @@ export class GoogleSigninComponent implements AfterViewInit {
           // save 2 to this session's strorage
          sessionStorage.setItem('ID:', profile.getId() );
           sessionStorage.setItem('Name:', profile.getName() );
-        window.location.href = '/dashboard';
+        window.location.href = '/';
 
 
       }, function (error: any) {

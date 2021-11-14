@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {StockChartModule} from '@syncfusion/ej2-angular-charts';
-import {DateTimeService, CandleSeriesService} from '@syncfusion/ej2-angular-charts';
+import {StockChartModule, TooltipService, ChartModule, CrosshairService, CandleSeriesService, LineSeriesService, SmaIndicatorService, DateTimeService} from '@syncfusion/ej2-angular-charts';
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
-import { StockchartComponent } from './stockchart/stockchart.component';
+
 
 
 import { LoginComponent } from './login/login.component';
@@ -18,36 +19,39 @@ import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HttpClientModule } from '@angular/common/http';
+import { CandlestickComponent } from './candlestick/candlestick.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AuthenticationComponent,
-
-    PostListComponent,
-    PostCreateComponent,
-    StockchartComponent,
     LoginComponent,
     LogoutComponent,
     GoogleSigninComponent,
-    SignInComponent
+    SignInComponent,
+    CandlestickComponent,
+    LandingPageComponent,
+   
 
-    StockchartComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     StockChartModule,
+    ChartModule,
+   
 
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
 
     HttpClientModule
 
   ],
-  providers: [DateTimeService, CandleSeriesService],
+  providers: [ DateTimeService, CandleSeriesService, TooltipService,  LineSeriesService, SmaIndicatorService, CrosshairService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
