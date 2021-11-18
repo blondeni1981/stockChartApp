@@ -7,8 +7,8 @@ import { AuthenticationComponent } from './authentication/authentication.compone
 
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
-import { CandlestickComponent } from './candlestick/candlestick.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { APIChartComponent } from './apichart/apichart.component';
 
 const routes: Routes = [
 
@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'landing-page', component: LandingPageComponent },
   { path: 'login', component: LoginComponent },
    { path: 'logout', component: LogoutComponent }, 
-   { path: 'candlestick', component: CandlestickComponent }
+   { path: 'apichart', component: APIChartComponent }
    
 ];
 

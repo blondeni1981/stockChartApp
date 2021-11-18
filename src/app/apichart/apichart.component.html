@@ -1,0 +1,50 @@
+
+<div class='container'>
+ 
+    <div class="card-body"><br />
+  
+      <input (change)="onChange($any($event))" (keyup)="onKeyup($any($event))" class="form-control" type="text" placeholder="Search..." list="searchresults" autofocus/>
+      <datalist id="searchresults">
+        <option *ngFor="let i of searchResults" value="{{i.symbol | uppercase}}">{{i.name | titlecase}}</option>
+      </datalist>
+  
+      <br />
+  
+      <div class="form-group row" id="timeframe">
+        <label class="col-sm-6 col-form-label" for="timeframe">Timeframe:</label>
+        <div class="col-sm-6">
+          <select (change)="onTimeChange($any($event.target).value)" class="form-control form-control-sm" name="timeframe">
+            <option id="{{timeframes[timeframe.id].id}}" value="{{timeframes[timeframe.id].timeframe}}" selected="{{timeframes[timeframe.id].selected}}" *ngFor="let timeframe of timeframes">{{timeframes[timeframe.id].label}}</option>
+          </select>
+        </div>  
+      </div>
+  
+      <br />
+  
+      <canvas
+        baseChart
+        [chartType]="'bar'"
+        [datasets]="chartData"
+        [options]="chartOptions"
+        [legend]="chartLegend"
+        [labels]="chartLabels">
+      </canvas>
+  
+    </div>
+  </div>
+  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  
+  
+  
+  
+      <!-- <div class="tv-header-search-container">
+      <button class="tv-header-search-container tv-header-search-container__button tv-header-search-container__button--full js-header-search-button" aria-label="Search">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M18.162 17.089a7.412 7.412 0 10-1.06 1.062l4.774 4.679a.75.75 0 101.05-1.071l-4.764-4.67zm-5.75 1.235a5.912 5.912 0 110-11.824 5.912 5.912 0 010 11.823z"/></svg>
+          <span class="tv-header-search-container__text">Search</span>
+          <span class="tv-header-search-container__hotkey js-search-hotkey-hint"></span>
+      </button> 
+      <button class="tv-header-search-container__button tv-header-search-container__button--simple js-header-search-button" aria-label="Search"><svg width="28" height="28" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M18.162 17.089a7.412 7.412 0 10-1.06 1.062l4.774 4.679a.75.75 0 101.05-1.071l-4.764-4.67zm-5.75 1.235a5.912 5.912 0 110-11.824 5.912 5.912 0 010 11.823z"/></svg></button>
+  </div>	-->			

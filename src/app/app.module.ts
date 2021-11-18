@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {StockChartModule, TooltipService, ChartModule, CrosshairService, CandleSeriesService, LineSeriesService, SmaIndicatorService, DateTimeService} from '@syncfusion/ej2-angular-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,8 +14,11 @@ import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HttpClientModule } from '@angular/common/http';
-import { CandlestickComponent } from './candlestick/candlestick.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { APIChartComponent } from './apichart/apichart.component';
+import { ChartsModule } from 'ng2-charts';
+
+
 
 
 @NgModule({
@@ -28,19 +30,18 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     LogoutComponent,
     GoogleSigninComponent,
     SignInComponent,
-    CandlestickComponent,
     LandingPageComponent,
+    APIChartComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StockChartModule,
-    ChartModule,
+    ChartsModule, 
     MatButtonModule,
     BrowserAnimationsModule,
     HttpClientModule
   ],
-  providers: [ DateTimeService, CandleSeriesService, TooltipService,  LineSeriesService, SmaIndicatorService, CrosshairService],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
