@@ -8,11 +8,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  </br>
  npm install
  ### Install into project
- ng add @angular/material
- </br>
  npm install ng2-charts@2.4.2 --save
  </br>
  npm install chart.js@v2.9.3
+ </br>
+  ng add @angular/material
  </br>
  npm install
  
