@@ -4,10 +4,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Add Dependencies and run npm install. If npm doesn't work run npm ci 
 
- npm i body-parser
- ng add @angular/material
- npm install ng2-charts@2.4.2 --save
- npm install chart.js@v2.9.3
+ -npm i body-parser
+ -ng add @angular/material
+ -npm install ng2-charts@2.4.2 --save
+ -npm install chart.js@v2.9.3
  
 
 
