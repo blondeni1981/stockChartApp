@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
 
+##Add Dependencies and run npm install. If npm doesn't work run npm ci
+ npm i body-parser
+ ng add @angular/material
+ npm install ng2-charts@2.4.2 --save
+ npm install chart.js@v2.9.3
+ 
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
