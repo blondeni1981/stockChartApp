@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { APIChartService } from '../services/apichart.service';
+import { NgForm } from '@angular/forms';
 
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Subscription } from 'rxjs';;
+//import { WatchlistService } from '../watchlist/watchlist.service';
 @Component({
   selector: 'app-apichart',
   templateUrl: './apichart.component.html',
@@ -19,7 +23,18 @@ export class APIChartComponent {
   dailyData$ =  [];
   lineCount: number;
   
-  constructor(private service: APIChartService) { }
+  constructor(private _snackBar:MatSnackBar, private service: APIChartService,/* private wsService: WatchlistService*/) { }
+
+  symbols: Symbol[] = [];
+  private symbolSub: Subscription;
+
+  onAddWatchList(form: NgForm) {
+    if (form.invalid) {
+      return;
+    }
+    this.service.addSymbol(form.value.symbol);
+    form.resetForm();
+  }
 
   public chartOptions = {
     scaleShowVerticalLines: false,

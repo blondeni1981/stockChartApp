@@ -1,9 +1,25 @@
 
 <div class='container'>
  
-    <div class="card-body"><br />
-  
-      <input (change)="onChange($any($event))" (keyup)="onKeyup($any($event))" class="form-control" type="text" placeholder="Search..." list="searchresults" autofocus/>
+    <!-- <div class="card-body"><br /> -->
+      <form (submit)="onAddWatchList(postForm)" 
+      #postForm="ngForm"> 
+      <input  name="symbol" 
+              [ngModel]="symbol" 
+              (change)="onChange($any($event))" 
+              (keyup)="onKeyup($any($event))" 
+              class="form-control" 
+              type="text" 
+              placeholder="Search..." 
+              list="searchresults" 
+              autofocus
+              #symbol="ngModel"/>
+      <button 
+        type="submit">Add to Watchlist
+      </button>
+      </form>
+
+
       <datalist id="searchresults">
         <option *ngFor="let i of searchResults" value="{{i.symbol | uppercase}}">{{i.name | titlecase}}</option>
       </datalist>
@@ -29,8 +45,8 @@
         [legend]="chartLegend"
         [labels]="chartLabels">
       </canvas>
-  
-    </div>
+<!--   
+    </div> -->
   </div>
   
   

@@ -13,7 +13,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 /** GET Stocks from the server */
 getStocks(): Observable<Stock[]> {   
-  return this.http.get<Stock[]>('http://localhost:3000/stocks');
+  return this.http.get<Stock[]>('http://localhost:3000/api/symbols/');
       //return  this.http.get<Stock[]>('mongodb+srv://testUser:test@stockscluster.nee1p.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
   }
 
