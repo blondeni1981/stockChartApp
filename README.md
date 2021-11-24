@@ -3,14 +3,18 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
 
 ## Add Dependencies and run npm install. If npm doesn't work run npm ci 
-
+### Install into the Stock Server with in ISIT422_stocks project
  npm i body-parser
  </br>
- ng add @angular/material
- </br>
+ npm install
+ ### Install into project
  npm install ng2-charts@2.4.2 --save
  </br>
  npm install chart.js@v2.9.3
+ </br>
+  ng add @angular/material
+ </br>
+ npm install
  
 ## Development server
 
