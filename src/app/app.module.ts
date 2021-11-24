@@ -22,6 +22,10 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatListModule} from '@angular/material/list';
+import { MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 
 import { HttpClientModule } from '@angular/common/http';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -29,6 +33,8 @@ import { APIChartComponent } from './apichart/apichart.component';
 import { ChartsModule } from 'ng2-charts';
 import { WatchlistComponent } from './watchlist/watchlist.component';
 import { APIChartService } from './services/apichart.service';
+import { NewAPIComponent } from './new-api/new-api.component';
+import { StockWatchComponent } from './stock-watch/stock-watch.component';
 
 
 
@@ -44,6 +50,8 @@ import { APIChartService } from './services/apichart.service';
     LandingPageComponent,
     APIChartComponent,
     WatchlistComponent,
+    NewAPIComponent,
+    StockWatchComponent,
   ],
   imports: [
     MatCardModule,
@@ -61,7 +69,11 @@ import { APIChartService } from './services/apichart.service';
     ChartsModule, 
     MatButtonModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule,
+    MatMenuModule,
+    MatSidenavModule
+
   ],
   providers: [APIChartService ],
   bootstrap: [AppComponent]
