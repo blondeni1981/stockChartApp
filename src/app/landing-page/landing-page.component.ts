@@ -9,19 +9,9 @@ import { Stock } from '../stock';
 })
   
 export class LandingPageComponent implements OnInit {
-
-  stocks: Stock[] = [];
-
-  constructor(private stockService: StockService) { }
-
-  ngOnInit(){
-    this.getStocks();
-    console.log(this.stocks);
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
-  
-  getStocks(): void {
-    this.stockService.getStocks()
-      .subscribe(stocks => this.stocks = stocks)
-      console.log(this.stocks);
-  }
+
+
 }

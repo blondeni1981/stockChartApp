@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { APIChartComponent } from './apichart/apichart.component';
+import { StockWatchComponent } from './stock-watch/stock-watch.component';
 
 const routes: Routes = [
 
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'landing-page', component: LandingPageComponent },
   { path: 'login', component: LoginComponent },
    { path: 'logout', component: LogoutComponent }, 
-   { path: 'apichart', component: APIChartComponent }
+   { path: 'apichart', component: APIChartComponent },
+   { path: 'stockwatch', component: StockWatchComponent }
    
 ];
 

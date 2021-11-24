@@ -6,7 +6,7 @@ const Symbol = require("../routes/StockSchemaFile");
 
 mongoose
   .connect(
-    "mongodb+srv://testUser:test@stockscluster.nee1p.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongodb+srv://blondeni1981:1982_Benji@watchlist.brj4n.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     )
   .then(() => {
     console.log("Connected to database!");
