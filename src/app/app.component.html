@@ -1,0 +1,34 @@
+<div class="header">
+    <div class="logo-container">
+        <a routerLink="/landing-page"><span>.stock<span> _</span>watch</span></a>
+
+        <div *ngIf="loggedIn">
+            <ul class="nav">
+                <!-- <li class="nav-item"><a routerLink="/page1" routerLink="active" class="nav-link">Page 1</a></li> -->
+                <li class="nav-item"><a routerLink="/landing-page"  class="nav-link">Home </a></li>
+                <li class="nav-item"><a routerLink="/apichart"  class="nav-link">Stock Data</a></li>
+                <li class="nav-item"><a routerLink="/stockwatch"  class="nav-link">Stock Watch</a></li>
+                
+                <!-- <li class="nav-item"><a routerLink="/page3" routerLink="active" class="nav-link">Create Account</a></li> -->
+                <!-- <li class="nav-item"><a routerLink="/login" class="nav-link">Log In</a></li> -->
+                <li class="nav-item" (click)="clearLoginData()"><a routerLink="/landing-page"  class="nav-link">Log Out</a></li>
+            </ul>
+        </div>
+        <div *ngIf="!loggedIn">
+            <ul class="nav">
+                <!-- <li class="nav-item"><a routerLink="/page1" routerLink="active" class="nav-link">Page 1</a></li> -->
+                <li class="nav-item"><a routerLink="/landing-page"  class="nav-link">Home </a></li>
+                <!-- <li class="nav-item"><a routerLink="/page3" routerLink="active" class="nav-link">Create Account</a></li> -->
+                <li class="nav-item"><a routerLink="/login" class="nav-link">Log In</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<router-outlet></router-outlet>
+<footer>
+    <p>&copy; Nicole Inman, May Kwon & Sam Carson | <span class="footer-description">Application Architecture 2021</span></p>
+</footer>
+
+
+

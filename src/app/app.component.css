@@ -1,0 +1,73 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #28262c;
+}
+
+router-outlet {
+  background-color: #28262c;
+}
+
+.header {
+  margin: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: #00e5ff;
+}
+a:hover {
+  color: #00b7cc;
+}
+
+ul {
+  margin: 0;
+}
+
+span {
+  margin-top: 2em;
+  width: fit-content;
+  font-size: 2em;
+  color: #fff;
+}
+
+span span {
+  font-size: 1em;
+  color: #00e5ff;
+}
+
+.nav {
+  padding: 0;
+  margin: 0.8em 2em 0.5em 0;
+  display: flex;
+  float: right;
+  justify-content: space-between;
+}
+
+router-outlet {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+  min-height: 100%;
+  /*min height is important. 
+   - use devtools to find the height
+  calc(100 viewport height - height of header - height of footer)*/
+}
+
+footer {
+  background-color: #5f5b66;
+  padding: 1.1rem 0;
+  margin: auto;
+  text-align: center;
+  font-size: 1em;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  z-index: 10;
+}
+
+.footer-description {
+  color: #00e5ff;
+  font-size: 1em;
+}
