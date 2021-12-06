@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
 ##  New UPDATED Packages from last commit - 12/5/2021
-# Install the packages and dependencies below this update as well
+### Install the packages and dependencies below this update as well
 
 npm install bcrypt --save //installs package to encrypt data
  </br>
