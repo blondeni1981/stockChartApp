@@ -24,9 +24,9 @@ npm install --save mongoose-unique-validator //checks for unique values in schem
  </br>
  npm install
  ### Install into project
- npm install --save @angular/animations
+  npm install @angular/cdk
  </br>
- npm install @angular/cdk
+ npm install --save @angular/animations
  </br>
  npm install ng2-charts@2.4.2 --save
  </br>
