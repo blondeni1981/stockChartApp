@@ -1,23 +1,5 @@
 # Stocks
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
-##  New UPDATED Packages from last commit - 12/5/2021
-### Install the packages and dependencies below this update as well
-
-npm install bcrypt --save //installs package to encrypt data
- </br>
-npm i auth-guard //otects the routes from unauthorized users
- </br>
-npm i e2e
- </br>
-npm i lint
- </br>
-npm i jsonwebtoken //creates web token for the server to authenticate 
- </br>
-npm install --save mongoose-unique-validator //checks for unique values in schema and it will throw an error
- </br>
-
-
 ## Before Opening The Project Add Updated List of Dependencies and run npm install. If npm doesn't work run npm ci 
 ### Install into the Stock Server with in ISIT422_stocks project
  npm i body-parser
