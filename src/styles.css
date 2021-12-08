@@ -35,3 +35,6 @@ body {
 .mat-typography {
   background-color: #28262c;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
